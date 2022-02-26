@@ -18,6 +18,9 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 10000000;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
 }
 
 .loader {
