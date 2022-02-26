@@ -347,11 +347,54 @@ span.lightshadow {
     color: #fff;
     font-size: 290px;
     margin-right: 15.5%;
+    display: none;
 }
 
 @media only screen and (max-width: 1500px) {
     .zyciorys_box4 ion-icon {
         margin-right: 14%;
+    }
+}
+
+.palac_prezydencki img {
+    margin-left: 5%;
+    width: 90%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-bottom: 0;
+}
+
+.palac_prezydencki p {
+    margin-left: 5%;
+    width: 90%;
+    background: #fff;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 800px) {
+    .palac_prezydencki p {
+        font-size: 35px;
+    }
+}
+
+.zyciorys_text.sth1 {
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .zyciorys_text {
+        padding: 20px 30px;
+        font-size: 1em;
     }
 }
 
@@ -366,26 +409,13 @@ span.lightshadow {
 
     .zyciorys_box4 .zyciorys_text {
         width: 90%;
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
-}
 
-.palac_prezydencki {
-    margin-left: 5%;
-    width: 90%;
-    border-radius: 25px;
-    margin-bottom: 50px;
-}
-
-.zyciorys_text.sth1 {
-    position: relative;
-    margin-left: 5%;
-    width: 90%;
-    margin-bottom: 50px;
-}
-
-@media only screen and (max-width: 600px) {
-    .zyciorys_text {
-        padding: 20px 30px;
-        font-size: 1em;
+    .palac_prezydencki img {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 }

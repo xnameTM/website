@@ -118,6 +118,8 @@ header ul li a:hover:after {
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-clip: text;
+    background-clip: none;
+    /* background-clip: border-box; */
     color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -538,7 +540,7 @@ footer a:hover {
     color: #000;
     z-index: 1000001;
     font-size: 0;
-    background: rgb(226, 226, 226);
+    background: #fff;
     border-radius: 50%;
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
     transition: .5s;
@@ -546,7 +548,6 @@ footer a:hover {
 }
 
 .backtotop:hover ion-icon {
-    background: #fff;
     transform: rotate(-360deg);
     box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
 }
@@ -594,6 +595,7 @@ footer a:hover {
     cursor: pointer;
     width: 60px;
     height: 60px;
+    transform: rotate(360deg);
 }
 
 .backtotop.active ion-icon {
