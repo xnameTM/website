@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+
+/* Todo: responsywność contentów */
+/* Website's content */
+
+.biografia_text {
+    position: relative;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 2px;
+    right: 15%;
+    left: 15%;
+    max-width: 70%;
+    padding: 30px 50px;
+    background: #fff;
+    border-radius: 25px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.zyciorys_content {
+    position: relative;
+    width: 70%;
+    left: 15%;
+    border-radius: 25px;
+    background: #fff;
+    transition: .5s;
+}
+
+.zyciorys_text {
+    position: relative;
+    left: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 30px 50px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.zyciorys_cudzyslow {
+    position: relative;
+    left: 0;
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 30px 50px;
+    text-align: justify;
+    font-weight: 500;
+    border-left: 10px solid #ccc;
+    padding-bottom: 40px;
+}
+
+.zyciorys_cudzyslow::before, 
+.zyciorys_cudzyslow::after {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 5%;
+    background: #ccc;
+    left: 0;
+}
+
+.zyciorys_cudzyslow::before {
+    top: 0;
+}
+
+.zyciorys_cudzyslow::after {
+    bottom: 0;
+}
+
+.zyciorys_cudzyslow span {
+    font-family: 'Roboto Mono', 'Poppins', sans-serif, Arial;
+    font-size: 100px;
+    color: #000;
+}
+
+span.lightshadow {
+    transition: .6s;
+}
+
+/* Todo: add it to html */
+.zyciorys_content:hover span.lightshadow {
+    color: #a8a846;
+    /* text-shadow: 0 0 1px #e4e458; */
+}
+
+.tworczosc_content .tworczosc_main {
+    position: relative;
+    color: #fff;
+    font-size: 50px;
+    margin-left: 10%;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.tworczosc_content .tworczosc_box h2 {
+    color: #fff;
+    font-size: 45px;
+    margin-left: 15%;
+    letter-spacing: 2px;
+}
+
+.tworczosc_box {
+    color: #000;
+    position: relative;
+    width: 70%;
+    left: 15%;
+}
+
+.tworczosc_box p {
+    margin-bottom: 70px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .biografia_text,
+    .zyciorys_text,
+    .zyciorys_cudzyslow,
+    .tworczosc_box p {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .biografia_text {
+        left: 5%;
+        right: 5%;
+        max-width: 90%;
+    }
+
+    .zyciorys_content,
+    .tworczosc_box {
+        left: 5%;
+        width: 90%;
+    }
+
+    .biografia_text,
+    .zyciorys_text,
+    .zyciorys_cudzyslow {
+        padding: 30px 30px;
+    }
+}
+
+.utwory_content iframe {
+    position: relative;
+    left: 10%;
+}
+
+.postac_content video {
+    width: 500px;
+    margin-left: calc(50% - 250px);
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+    animation: videoAnim 5s linear infinite;
+}
+
+.postac_content img {
+    display: none;
+}
+
+@keyframes videoAnim {
+    0% {
+        /* border-radius: 50%; */
+        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+    }
+
+    25% {
+        /* border-radius: 48%; */
+        box-shadow: 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 60px #ccc;
+    }
+
+    30% {
+        /* border-radius: 48%; */
+        box-shadow: 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 60px #ccc;
+    }
+
+    50% {
+        /* border-radius: 50%; */
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 35px #ccc;
+    }
+
+    55% {
+        /* border-radius: 50%; */
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 35px #ccc;
+    }
+
+    75% {
+        /* border-radius: 48%; */
+        box-shadow: 0 0 30px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 45px #fff, 0 0 50px #fff, 0 0 70px #ccc;
+    }
+
+    80% {
+        /* border-radius: 48%; */
+        box-shadow: 0 0 30px #fff, 0 0 35px #fff, 0 0 40px #fff, 0 0 45px #fff, 0 0 50px #fff, 0 0 70px #ccc;
+    }
+
+    95% {
+        /* border-radius: 50%; */
+        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+    }
+
+    100% {
+        /* border-radius: 50%; */
+        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .postac_content video {
+        display: none;
+    }
+
+    .postac_content img {
+        display: block;
+        width: 50%;
+        margin-left: 25%;
+        border: 8px solid #fff;
+        border-radius: 30px;
+        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .postac_content video {
+        animation: none;
+    }
+}

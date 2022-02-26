@@ -1,0 +1,240 @@
+/* Imported from https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, Arial;
+}
+
+body {
+    background: #000;
+}
+
+header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    padding: 5px 30px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    z-index: 10000;
+    transition: .5s;
+}
+
+header a {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.authors_text {
+    color: #fff;
+    padding-top: 110px;
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.authors_description {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.authors_description::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 197px;
+    background: #fff;
+    left: calc(50% - 1px);
+    top: 30px;
+}
+
+.authors_description::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background: #000;
+    left: calc(50% - 1px);
+    top: 227px;
+}
+
+.authors_description ion-icon {
+    color: #fff;
+    font-size: 200px;
+    margin: 10px 50px;
+}
+
+.authors_description .author-info p {
+    background: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 300px;
+    font-weight: 500;
+}
+
+.info {
+    width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info p {
+    font-size: 39px;
+    font-weight: 500;
+    text-align: justify;
+    width: 1200px;
+    color: #f00;
+}
+
+.info p span {
+    font-size: 42px;
+}
+
+.info p span.min {
+    font-size: 35px;
+}
+
+.circle1 {
+    position: absolute;
+    width: 174px;
+    height: 174px;
+    border-radius: 50%;
+    /* background: #f00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(50% - 237px);
+    top: 23px;
+    font-family: consolas, 'Poppins', sans-serif, Arial;
+}
+
+.circle2 {
+    position: absolute;
+    width: 174px;
+    height: 174px;
+    border-radius: 50%;
+    /* background: #f00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: calc(50% - 237px);
+    top: 23px;
+    font-family: consolas, 'Poppins', sans-serif, Arial;
+}
+
+.circle1 .text1,
+.circle2 .text2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    z-index: 10;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle1 .text1 span,
+.circle2 .text2 span {
+    position: absolute;
+    left: 50%;
+    font-size: 1em;
+    transform-origin: 0 87px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .info,
+    .info p {
+        width: 90%;
+    }
+
+    .info {
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media only screen and (min-width: 621px) and (max-width: 800px) {
+    .info p {
+        font-size: 32px;
+    }
+    
+    .info p span {
+        font-size: 35px;
+    }
+    
+    .info p span.min {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .authors_description {
+        display: block;
+    }
+
+    .authors_description::before,
+    .authors_description::after {
+        display: none;
+    }
+
+    .authors_description .author-info {
+        position: relative;
+        left: calc(50% - 150px);
+        width: 300px;
+    }
+
+    .circle1,
+    .circle2 {
+        left: calc(50% - 87px);
+    }
+
+    .circle2 {
+        top: 310px;
+    }
+
+    .info p {
+        font-size: 27px;
+    }
+    
+    .info p span {
+        font-size: 30px;
+    }
+    
+    .info p span.min {
+        font-size: 23px;
+    }
+
+    .authors_text {
+        padding-top: 180px;
+    }
+}

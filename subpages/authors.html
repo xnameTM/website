@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Fryderyk Chopin - Autorzy strony</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="xname">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="Chopin">
+        <meta name="description" content="Życie i Twórczość Fryderyka Chopina">
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+        <link rel="stylesheet" href="../css/authors-style.css">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="main_text">Życie i Twórczość Chopina</a>
+        </header>
+        <div class="main">
+            <h2 class="authors_text">Twórcy</h2>
+            <div class="authors_description">
+                <div class="circle1">
+                    <div class="text1">
+                        <p>xname xname xname xname</p>
+                    </div>
+                </div>
+                <div class="circle2">
+                    <div class="text2">
+                        <p>Pedro Pedro Pedro Pedro</p>
+                    </div>
+                </div>
+                <div class="author-info">
+                    <ion-icon name="person-circle"></ion-icon>
+                    <p>Marek Kotarba</p>
+                    <p>xname</p>
+                </div>
+                <div class="author-info">
+                    <ion-icon name="person-circle"></ion-icon>
+                    <p>Maciej Patro</p>
+                    <p>Pedro</p>
+                </div>
+            </div>
+            <div class="info">
+<p><span>&lt;</span>info<span>&gt;</span>
+Jesteśmy uczniami ZSŁ na profilu programistycznym, 
+a o to nasz projekt na temat najsłynniejszego 
+polskiego pianisty - Fryderyka Chopina
+<span>&lt;</span><span class="min">/</span>info<span>&gt;</span></p>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        
+        <script>
+            const text = document.querySelector('.text1 p');
+            text.innerHTML = text.innerText.split("").map(
+                (char, i) => 
+                `<span style="transform:rotate(${i * 15}deg)">${char}</span>`
+            ).join("")
+        </script>
+        <script>
+            const text2 = document.querySelector('.text2 p');
+            text2.innerHTML = text2.innerText.split("").map(
+                (char, i) => 
+                `<span style="transform:rotate(${i * 15}deg)">${char}</span>`
+            ).join("")
+        </script>
+
+        <!-- Imported from https://ionic.io/ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!--
+            created by xname && Pedro
+        -->
+    </body>
+</html>
