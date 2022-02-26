@@ -7,6 +7,7 @@ const afterClick2 = document.querySelector('.afterClick2');
 const afterClick3 = document.querySelector('.afterClick3');
 const afterClick4 = document.querySelector('.afterClick4');
 const afterClick5 = document.querySelector('.afterClick5');
+const afterClick6 = document.querySelector('.afterClick6');
 
 let menuOpen = false;
 
@@ -47,6 +48,15 @@ afterClick4.addEventListener('click', () => {
 });
 
 afterClick5.addEventListener('click', () => {
+    if (menuOpen) {
+        menuBtn.classList.remove("open");
+        menu.classList.remove("active");
+        main.classList.remove('blockScroll');
+        menuOpen = false;
+    }
+});
+
+afterClick6.addEventListener('click', () => {
     if (menuOpen) {
         menuBtn.classList.remove("open");
         menu.classList.remove("active");
