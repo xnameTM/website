@@ -11,16 +11,18 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/content.css">
+        <link rel="stylesheet" href="css/preloader.css">
     </head>
-    <body>
+    <body class="preload">
         <header>
             <a href="#top" class="main_text">Życie i Twórczość Chopina</a>
             <ul class="menu">
                 <li class="afterClick1"><a href="#postac">Postać</a></li>
                 <li class="afterClick2"><a href="#biografia">Biografia</a></li>
-                <li class="afterClick3"><a href="#pochodzenie">Lokalizacja ur.</a></li>
+                <li class="afterClick3"><a href="#pochodzenie">Miejsce ur.</a></li>
                 <li class="afterClick4"><a href="#tworczość">Twórczość</a></li>
                 <li class="afterClick5"><a href="#utwory">Utwory</a></li>
+                <li class="afterClick6"><a href="#dziedzictwo">Dziedzictwo</a></li>
             </ul>
             <button class="menu-btn">
                 <span class="menu-btn__burger"></span>
@@ -48,9 +50,10 @@
                     <ol>
                         <li><a href="#postac">I. Postać</a></li>
                         <li><a href="#biografia">II. Biografia</a></li>
-                        <li><a href="#pochodzenie">III. Lokalizaja ur.</a></li>
+                        <li><a href="#pochodzenie">III. Miejsce ur.</a></li>
                         <li><a href="#tworczość">IV. Twórczość</a></li>
                         <li><a href="#utwory">V. Utwory</a></li>
+                        <li><a href="#dziedzictwo">VI. Dziedzictwo</a></li>
                     </ol>
                     <ion-icon name="musical-notes"></ion-icon>
                 </div>
@@ -155,13 +158,12 @@
 
 
             <!-- Pochodzenie ------------------------------------------------------------------------------------------------------------------->
-            <!-- Todo: pochodzenie content -->
 
             <div id="pochodzenie"></div>
-            <h2 class="temat"><span>03.</span> Lokalizacja ur.</h2>
-            <!-- Todo: google location -->
-            <p style="color: #f00; font-size: 50px; text-align: center;">Todo: google location</p>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441730.8643877778!2d20.062606292136515!3d52.29347420720362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bfdc3ee0d8e9f%3A0x20451cbd1667042b!2sDom%20Urodzenia%20Fryderyka%20Chopina!5e0!3m2!1spl!2spl!4v1645659443182!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            <h2 class="temat"><span>03.</span> Miejsce ur.</h2>
+            <div style="padding-left: 5%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441730.8643877778!2d20.062606292136515!3d52.29347420720362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bfdc3ee0d8e9f%3A0x20451cbd1667042b!2sDom%20Urodzenia%20Fryderyka%20Chopina!5e0!3m2!1spl!2spl!4v1645659443182!5m2!1spl!2spl" width="94.73%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
 
 
 
@@ -242,6 +244,7 @@
 
 
             <!-- Utwory ------------------------------------------------------------------------------------------------------------------------>
+            <!-- Dziedzictwo ------------------------------------------------------------------------------------------------------------------->
             <!-- Todo: utwory content -->
 
             <div id="utwory"></div>
@@ -258,6 +261,22 @@
 
 
 
+            <!-- Dziedzictwo ------------------------------------------------------------------------------------------------------------------->
+            <!-- Todo: dziedzictwo content -->
+
+            <div id="dziedzictwo"></div>
+            <h2 class="temat"><span>02.</span> Dziedzictwo</h2>
+            <div class="dziedzictwo_content">
+            
+            
+
+
+
+
+
+
+
+
             <footer>
                 <a href="subpages/authors.html">Twórcy strony</a>
                 <p>designed by xname</p>
@@ -266,6 +285,9 @@
         <a href="#top" class="backtotop">
             <ion-icon name="arrow-up-outline"></ion-icon>
         </a>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
         
         <!-- Scripts -->
 
@@ -284,6 +306,16 @@
         </script>
 
         <script src="scripts/main.js"></script>
+
+        <script>
+            var loader = document.querySelector('.loader-wrapper');
+            var body = document.querySelector('body');
+
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+                body.classList.remove("preload");
+            });
+        </script>
 
         <!-- Imported from https://ionic.io/ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
