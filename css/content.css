@@ -18,63 +18,6 @@
     font-weight: 500;
 }
 
-.zyciorys_content {
-    position: relative;
-    width: 70%;
-    left: 15%;
-    border-radius: 25px;
-    background: #fff;
-    transition: .5s;
-}
-
-.zyciorys_text {
-    position: relative;
-    left: 0;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #000;
-    padding: 30px 50px;
-    text-align: justify;
-    font-weight: 500;
-}
-
-.zyciorys_cudzyslow {
-    position: relative;
-    left: 0;
-    font-size: 23px;
-    letter-spacing: 2px;
-    color: #000;
-    padding: 30px 50px;
-    text-align: justify;
-    font-weight: 500;
-    border-left: 10px solid #ccc;
-    padding-bottom: 40px;
-}
-
-.zyciorys_cudzyslow::before, 
-.zyciorys_cudzyslow::after {
-    position: absolute;
-    content: "";
-    height: 5px;
-    width: 5%;
-    background: #ccc;
-    left: 0;
-}
-
-.zyciorys_cudzyslow::before {
-    top: 0;
-}
-
-.zyciorys_cudzyslow::after {
-    bottom: 0;
-}
-
-.zyciorys_cudzyslow span {
-    font-family: 'Roboto Mono', 'Poppins', sans-serif, Arial;
-    font-size: 100px;
-    color: #000;
-}
-
 span.lightshadow {
     transition: .6s;
 }
@@ -119,9 +62,14 @@ span.lightshadow {
 
 @media only screen and (max-width: 800px) {
     .biografia_text,
-    .zyciorys_text,
     .zyciorys_cudzyslow,
     .tworczosc_box p {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .zyciorys_text {
         font-size: 1.1em;
     }
 }
@@ -133,7 +81,6 @@ span.lightshadow {
         max-width: 90%;
     }
 
-    .zyciorys_content,
     .tworczosc_box {
         left: 5%;
         width: 90%;
@@ -229,5 +176,205 @@ span.lightshadow {
 @media only screen and (max-width: 1100px) {
     .postac_content video {
         animation: none;
+    }
+}
+
+.zyciorys_content {
+    position: relative;
+    transition: .5s;
+}
+
+.zyciorys_text {
+    position: relative;
+    left: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 30px 50px;
+    text-align: justify;
+    font-weight: 500;
+    background: #fff;
+    border-radius: 25px;
+    margin-bottom: 200px;
+    width: 55%;
+}
+
+.zyciorys_text.left {
+    left: 5%;
+}
+
+.zyciorys_text.right {
+    left: 40%;
+}
+
+.zyciorys_cudzyslow {
+    position: relative;
+    left: 0;
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: #000;
+    padding: 30px 50px;
+    text-align: justify;
+    font-weight: 500;
+    border-left: 10px solid #ccc;
+    background: #fff;
+    padding-bottom: 40px;
+    background: #fff;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    width: 90%;
+    left: 5%;
+}
+
+.zyciorys_cudzyslow span {
+    font-family: 'Roboto Mono', 'Poppins', sans-serif, Arial;
+    font-size: 100px;
+    color: #000;
+}
+
+.zyciorys_box1 {
+    position: relative;
+    margin-bottom: 50px;
+    height: 400px;
+}
+
+.zyciorys_box1 .zyciorys_text {
+    position: absolute;
+    left: 5%;
+    height: 100%;
+}
+
+.zyciorys_box1 img {
+    position: absolute;
+    height: 100%;
+    right: 5%;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1386px) {
+    .zyciorys_box1 {
+        height: 500px;
+    }
+}
+
+.zyciorys_box2 {
+    display: none;
+}
+
+.zyciorys_box2 .zyciorys_text {
+    width: 90%;
+    margin-bottom: 50px;
+    margin-left: 5%;
+}
+
+.zyciorys_box2 img {
+    position: relative;
+    width: 40%;
+    left: 30%;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 1385px) {
+    .zyciorys_box1 {
+        display: none;
+    }
+
+    .zyciorys_box2 {
+        display: block;
+    }
+}
+
+.zyciorys_box3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zyciorys_box3 .zyciorys_text {
+    position: static;
+    margin-bottom: 50px;
+}
+
+.zyciorys_box3 .zyciorys_text:first-child {
+    margin-left: 5%;
+    margin-right: 25px;
+}
+
+.zyciorys_box3 .zyciorys_text:last-child {
+    margin-right: 5%;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .zyciorys_box3 {
+        display: block;
+    }
+    
+    .zyciorys_box3 .zyciorys_text {
+        width: 90%;
+    }
+
+    .zyciorys_box3 .zyciorys_text:first-child,
+    .zyciorys_box3 .zyciorys_text:last-child {
+        margin-left: 5%;
+        margin-right: 0;
+    }
+}
+
+.zyciorys_box4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zyciorys_box4 .zyciorys_text {
+    position: static;
+    margin-left: 5%;
+    margin-bottom: 50px;
+}
+
+.zyciorys_box4 ion-icon {
+    color: #fff;
+    font-size: 290px;
+    margin-right: 15.5%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .zyciorys_box4 ion-icon {
+        margin-right: 14%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .zyciorys_box4 ion-icon {
+        display: none;
+    }
+
+    .zyciorys_box4 {
+        display: block;
+    }
+
+    .zyciorys_box4 .zyciorys_text {
+        width: 90%;
+    }
+}
+
+.palac_prezydencki {
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.zyciorys_text.sth1 {
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .zyciorys_text {
+        padding: 20px 30px;
+        font-size: 1em;
     }
 }
