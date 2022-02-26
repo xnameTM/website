@@ -71,10 +71,10 @@
             <h2 class="temat"><span>01.</span> Postać</h2>
             <div class="postac_content">
                 <!-- created in https://www.myheritage.pl/deep-nostalgia -->
-                <video autoplay loop style="margin-bottom: 50px;">
+                <video autoplay loop>
                     <source src="assets/video/Frederic_Chopin_video.mp4" type="video/mp4">
                 </video>
-                <img src="assets/img/Frederic_Chopin_photo.png" alt="Chopin" style="margin-bottom: 50px;">
+                <img src="assets/img/Frederic_Chopin_photo.png" alt="Chopin">
                 <p class="postac_text">
                     Fryderyk Franciszek Chopin - urodził się 22 lutego lub 1 marca 1810 w Żelazowej Woli, zmarł 17 października 1849 w Paryżu) – polski kompozytor i pianista. Od października 1831 roku mieszkał we Francji w Paryżu. Jest uważany za jednego z najwybitniejszych kompozytorów romantycznych, a także za jednego z najważniejszych polskich kompozytorów w historii.
                 </p>
@@ -258,6 +258,10 @@
                 <a href="subpages/authors.html">Twórcy strony</a>
                 <p>designed by xname</p>
             </footer>
+
+            <a href="#top" class="backtotop">
+                <ion-icon name="arrow-up-outline"></ion-icon>
+            </a>
         </div>
         
         <!-- Scripts -->
@@ -268,6 +272,14 @@
                 header.classList.toggle("sticky", window.scrollY > 0);
             })
         </script>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector(".backtotop");
+                header.classList.toggle("active", window.scrollY > 1000);
+            })
+        </script>
+
         <script src="scripts/main.js"></script>
 
         <!-- Imported from https://ionic.io/ionicons -->

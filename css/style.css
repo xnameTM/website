@@ -519,3 +519,83 @@ footer a:hover {
         padding-right: 15px;
     }
 }
+
+.backtotop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10000;
+    width: 0;
+    height: 0;
+    /* background: #fff; */
+    border-radius: 50%;
+    transition: .5s;
+    opacity: 0;
+    cursor: default;
+}
+
+.backtotop ion-icon {
+    color: #000;
+    z-index: 1000001;
+    font-size: 0;
+    background: rgb(226, 226, 226);
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    transition: .5s;
+    animation: shortAnim 5s linear infinite;
+}
+
+.backtotop:hover ion-icon {
+    background: #fff;
+    transform: rotate(-360deg);
+    box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+}
+
+@keyframes shortAnim {
+    0% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    }
+
+    5% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    }
+
+    25% {
+        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+    }
+    
+    30% {
+        box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+    }
+
+    50% {
+        box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #fff;
+    }
+
+    55% {
+        box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 8px #fff;
+    }
+
+    75% {
+        box-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
+    }
+
+    80% {
+        box-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    }
+}
+
+.backtotop.active {
+    opacity: 1;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.backtotop.active ion-icon {
+    font-size: 60px;
+}
