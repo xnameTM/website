@@ -3,7 +3,7 @@
 /* Todo: responsywność contentów */
 /* Website's content */
 
-.biografia_text {
+.postac_text {
     position: relative;
     color: #000;
     font-size: 20px;
@@ -38,10 +38,20 @@ span.lightshadow {
 }
 
 .tworczosc_content .tworczosc_box h2 {
+    position: relative;
     color: #fff;
     font-size: 45px;
     margin-left: 15%;
     letter-spacing: 2px;
+}
+
+.tworczosc_content .tworczosc_box h2::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 5px;
+    background: #fff;
+    left: -15px;
 }
 
 .tworczosc_box {
@@ -61,7 +71,7 @@ span.lightshadow {
 }
 
 @media only screen and (max-width: 800px) {
-    .biografia_text,
+    .postac_text,
     .zyciorys_cudzyslow,
     .tworczosc_box p {
         font-size: 1.1em;
@@ -75,7 +85,7 @@ span.lightshadow {
 }
 
 @media only screen and (max-width: 600px) {
-    .biografia_text {
+    .postac_text {
         left: 5%;
         right: 5%;
         max-width: 90%;
@@ -86,7 +96,7 @@ span.lightshadow {
         width: 90%;
     }
 
-    .biografia_text,
+    .postac_text,
     .zyciorys_text,
     .zyciorys_cudzyslow {
         padding: 30px 30px;
