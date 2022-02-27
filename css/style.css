@@ -408,7 +408,7 @@ footer a:hover {
     transition: .3s;
 }
 
-@media only screen and (max-width: 1345px) {
+@media only screen and (max-width: 1490px) {
     .test001{
         font-size: 50px;
     }
@@ -604,36 +604,4 @@ footer a:hover {
 
 .backtotop.active ion-icon {
     font-size: 60px;
-}
-
-.language_btn {
-    background: #fff;
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 10000;
-    cursor: pointer;
-    text-align: center;
-    font-size: 25px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    padding-top: 11px;
-    transition: .5s;
-    border-radius: 50%;
-    box-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff;
-}
-
-.language_btn:hover {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
-}
-
-.language_btn:active {
-    box-shadow: 0 0 7px #7cfbff, 0 0 12px #7cfbff, 0 0 17px #7cfbff;
-    background: #7cfbff;
 }

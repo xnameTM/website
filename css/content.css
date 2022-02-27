@@ -246,7 +246,7 @@ span.lightshadow {
 .zyciorys_box1 {
     position: relative;
     margin-bottom: 50px;
-    height: 400px;
+    height: 700px;
 }
 
 .zyciorys_box1 .zyciorys_text {
@@ -262,9 +262,13 @@ span.lightshadow {
     border-radius: 25px;
 }
 
-@media only screen and (max-width: 1700px) and (min-width: 1386px) {
+@media only screen and (max-width: 1700px) and (min-width: 1401px) {
     .zyciorys_box1 {
-        height: 500px;
+        height: 900px;
+    }
+
+    .zyciorys_box1 img {
+        height: 70%;
     }
 }
 
@@ -286,7 +290,7 @@ span.lightshadow {
     border-radius: 25px;
 }
 
-@media only screen and (max-width: 1385px) {
+@media only screen and (max-width: 1400px) {
     .zyciorys_box1 {
         display: none;
     }
@@ -357,32 +361,7 @@ span.lightshadow {
     }
 }
 
-.palac_prezydencki img {
-    margin-left: 5%;
-    width: 90%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    margin-bottom: 0;
-}
-
-.palac_prezydencki p {
-    margin-left: 5%;
-    width: 90%;
-    background: #fff;
-    color: #000;
-    font-size: 50px;
-    text-align: center;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
-    font-weight: 500;
-}
-
 @media only screen and (max-width: 800px) {
-    .palac_prezydencki p {
-        font-size: 35px;
-    }
 }
 
 .zyciorys_text.sth1 {
@@ -410,13 +389,42 @@ span.lightshadow {
 
     .zyciorys_box4 .zyciorys_text {
         width: 90%;
-        margin-bottom: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        margin-bottom: 50px;
     }
+}
 
-    .palac_prezydencki img {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+.pochodzenie_text {
+    background: #fff;
+    color: #000;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 30px 50px;
+    border-radius: 25px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.pochodzenie_content p:nth-child(2) {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .pochodzenie_text {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .pochodzenie_content p:nth-child(2) {
+        font-size: 30px;
     }
 }
