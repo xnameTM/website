@@ -115,7 +115,7 @@ span.lightshadow {
     border: 8px solid #fff;
     border-radius: 50%;
     box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 40px #ccc;
-    animation: videoAnim 5s linear infinite;
+    /* animation: videoAnim 5s linear infinite; */
 }
 
 .postac_content img {
