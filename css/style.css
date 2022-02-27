@@ -240,7 +240,7 @@ h2.temat {
     letter-spacing: 2px;
 }
 
-h2.temat span {
+h2.temat span:first-child {
     font-size: 90px;
 }
 
@@ -409,6 +409,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1345px) {
+    .test001{
+        font-size: 50px;
+    }
+
     .menu.active {
         transform: translateX(100%);
     }
@@ -476,8 +480,8 @@ footer a:hover {
         font-size: 45px;
     }
 
-    h2.temat span {
-        font-size: 85px;
+    h2.temat span:first-child {
+        font-size: 90px;
     }
 
     h2.temat::before {
