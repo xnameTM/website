@@ -237,7 +237,7 @@ span.lightshadow {
     left: 5%;
 }
 
-.zyciorys_cudzyslow span {
+.zyciorys_cudzyslow span:first-child {
     font-family: 'Roboto Mono', 'Poppins', sans-serif, Arial;
     font-size: 100px;
     color: #000;
