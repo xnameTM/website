@@ -22,12 +22,12 @@
             <h2 class="authors_text">Twórcy</h2>
             <div class="authors_description">
                 <div class="circle1">
-                    <div class="text1">
+                    <div class="textx1">
                         <p>xname xname xname xname</p>
                     </div>
                 </div>
                 <div class="circle2">
-                    <div class="text2">
+                    <div class="textx2">
                         <p>Pedro Pedro Pedro Pedro</p>
                     </div>
                 </div>
@@ -77,14 +77,15 @@ polskiego pianisty - Fryderyka Chopina</span>
         <!-- Scripts -->
         
         <script>
-            const text = document.querySelector('.text1 p');
+            const text = document.querySelector('.textx1 p');
             text.innerHTML = text.innerText.split("").map(
                 (char, i) => 
                 `<span style="transform:rotate(${i * 15}deg)">${char}</span>`
             ).join("")
         </script>
+        
         <script>
-            const text2 = document.querySelector('.text2 p');
+            const text2 = document.querySelector('.textx2 p');
             text2.innerHTML = text2.innerText.split("").map(
                 (char, i) => 
                 `<span style="transform:rotate(${i * 15}deg)">${char}</span>`
