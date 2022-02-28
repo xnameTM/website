@@ -457,3 +457,27 @@ span.lightshadow {
         width: 80%;
     }
 }
+
+.dom_chopina img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.dom_chopina_box {
+    margin-left: 5%;
+    width: 90%;
+    background-color: #fff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.dom_chopina_box p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
