@@ -70,6 +70,7 @@ btn.addEventListener('click', () => {
         $('.text34').text('Powstały dwa koncerty na fortepian i orkiestrę: f-moll op. 21 z 1829 r. i e-moll op. 11 z 1830 r. – oba z pierwszego okresu twórczości, pisane jeszcze w Polsce, osadzone w formie klasycznej.');
         $('.text35').text('Inne');
         $('.text36').text('Chopin skomponował 19 pieśni na głos z fortepianem, Trio fortepianowe oraz Sonatę wiolonczelową.');
+        $('.text37').text('Przykładowe utwory stworzone przez Fryderyka Chopina:');
     } else {
         // ENG -----------------------------------------------------------
         language = true;
@@ -138,5 +139,6 @@ btn.addEventListener('click', () => {
         $('.text34').text("?");
         $('.text35').text("?");
         $('.text36').text("?");
+        $('.text37').text('?');
     }
 });

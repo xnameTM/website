@@ -26,8 +26,3 @@
 .language_btn:hover {
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 }
-
-.language_btn:active {
-    box-shadow: 0 0 7px #7cfbff, 0 0 12px #7cfbff, 0 0 17px #7cfbff;
-    background: #7cfbff;
-}

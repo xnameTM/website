@@ -104,9 +104,21 @@ span.lightshadow {
     }
 }
 
+.utwory_content .utwory_tytul {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
 .utwory_content iframe {
     position: relative;
     left: 10%;
+    margin-bottom: 100px;
 }
 
 .postac_content video {
@@ -426,5 +438,22 @@ span.lightshadow {
 @media only screen and (max-width: 850px) {
     .pochodzenie_content p:nth-child(2) {
         font-size: 30px;
+    }
+}
+
+.utwory_text {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-left: 5%;
+    width: 90%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .utwory_text {
+        margin-left: 10%;
+        font-size: 30px;
+        width: 80%;
     }
 }
