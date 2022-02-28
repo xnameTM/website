@@ -73,6 +73,9 @@ btn.addEventListener('click', () => {
         $('.text37').text('Przykładowe utwory stworzone przez Fryderyka Chopina:');
         $('.text38').text('Dom Chopina');
         $('.text39').text('Spis Treści');
+        $('.text40').text('Miedzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina');
+        $('.text41').text('Konkurs Chopinowski jest najważniejszym wydarzeniem muzycznym w Polsce i jednym z najważniejszych wydarzeń muzycznych na świecie. Obok olbrzymiej roli jaką pełni w popularyzacji muzyki Chopina, odkrywa największe talenty pianistyczne, zapewniając młodym muzykom najskuteczniejszy start w międzynarodowej karierze. Jest źródłem wielokulturowej polaryzacji, którą świat obserwuje w różnorodnych interpretacjach muzyki genialnego kompozytora. Pierwszy Konkurs Chopinowski odbył się w 1927 roku w Warszawie...');
+        $('.text42').text('Pomnik Fryderyka Chopina w Warszawie – secesyjny pomnik Fryderyka Chopina w parku Łazienkowskim w Warszawie, przedstawiający odlaną w brązie postać kompozytora siedzącą pod stylizowaną wierzbą. Data budowy 1909–1926;  Rekonstrukcja po wojnie 1946–1958; Stworzony przez  Wacława Szymanowskiego i Oskara Sosnowskiego.');
     } else {
         // ENG -----------------------------------------------------------
         language = true;
@@ -144,5 +147,8 @@ btn.addEventListener('click', () => {
         $('.text37').text('Examples of tracks created by Fryderyk Chopin:');
         $('.text38').text("Chopin's house");
         $('.text39').text("Table of Contents");
+        $('.text40').text("The International Piano Frederic Chopin Competition");
+        $('.text41').text("The Chopin Competition is the most important music event in Poland and one of the most important music events in the world. Apart from the enormous role he plays in popularizing Chopin's music, he discovers the greatest pianistic talents, providing young musicians with the most effective start in an international career. It is a source of multicultural polarization that the world observes in various interpretations of the music of the genius composer. The first Chopin Competition was held in 1927 in Warsaw...");
+        $('.text42').text("Monument to Fryderyk Chopin in Warsaw - the Art Nouveau monument to Fryderyk Chopin in Łazienkowski Park in Warsaw, presenting the composer cast in bronze sitting under a stylized willow tree. Date of construction 1909–1926; Reconstruction after the war 1946–1958; Created by Wacław Szymanowski and Oskar Sosnowski.");
     }
 });

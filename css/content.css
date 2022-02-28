@@ -490,3 +490,74 @@ span.lightshadow {
     margin-left: 40%;
     margin-top: 200px;
 }
+
+.konkurs h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.konkurs p {
+    color: #000;
+    font-size: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.konkurs a {
+    margin-left: 70%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.konkurs a:hover {
+    text-shadow: 0 0 7px #fff;
+}
+
+.pomnik img {
+    margin-left: 10%;
+    width: 80%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.pomnik p {
+    color: #000;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #fff;
+    padding: 30px 40px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .podpis_chopina {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .konkurs a {
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .konkurs p {
+        font-size: 20px;
+    }
+}
