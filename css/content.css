@@ -560,4 +560,8 @@ span.lightshadow {
     .konkurs p {
         font-size: 20px;
     }
+
+    .konkurs h2 {
+        font-size: 30px;
+    }
 }
