@@ -62,12 +62,6 @@
 
 
 
-
-
-
-
-
-
             <!-- Postać ------------------------------------------------------------------------------------------------------------------------>
 
             <div id="postac"></div>
@@ -85,13 +79,6 @@
                     "Rodem warszawianin, sercem Polak, a talentem obywatel świata..."
                 </p>
             </div>
-
-
-
-
-
-
-
 
 
 
@@ -153,14 +140,7 @@
             </div>
             
 
-
-
-
-
-
-
-
-
+            
             <!-- Pochodzenie ------------------------------------------------------------------------------------------------------------------->
 
             <div id="pochodzenie"></div>
@@ -182,15 +162,7 @@
                 </div>
             </div>
         
-
-
-
-
-
-
-
-
-
+            
 
             <!-- Twórczość --------------------------------------------------------------------------------------------------------------------->
 
@@ -255,12 +227,6 @@
 
 
 
-
-
-
-
-
-
             <!-- Utwory ------------------------------------------------------------------------------------------------------------------------>
 
             <div id="utwory"></div>
@@ -313,12 +279,6 @@
 
 
 
-
-
-
-
-
-
             <!-- Dziedzictwo ------------------------------------------------------------------------------------------------------------------->
 
             <div id="dziedzictwo"></div>
@@ -326,28 +286,22 @@
             <div class="dziedzictwo_content">
                 <div class="pomnik">
                     <img src="assets/img/pomnik_chopin.png" alt="pomnik">
+
                     <p class="text42">
                         Pomnik Fryderyka Chopina w Warszawie – secesyjny pomnik Fryderyka Chopina w parku Łazienkowskim w Warszawie, przedstawiający odlaną w brązie postać kompozytora siedzącą pod stylizowaną wierzbą. Data budowy 1909–1926;  Rekonstrukcja po wojnie 1946–1958; Stworzony przez  Wacława Szymanowskiego i Oskara Sosnowskiego.
                     </p>
                 </div>
                 <div class="konkurs">
                     <h2 class="text40">Miedzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina</h2>
+
                     <p class="text41">
                         Konkurs Chopinowski jest najważniejszym wydarzeniem muzycznym w Polsce i jednym z najważniejszych wydarzeń muzycznych na świecie. Obok olbrzymiej roli jaką pełni w popularyzacji muzyki Chopina, odkrywa największe talenty pianistyczne, zapewniając młodym muzykom najskuteczniejszy start w międzynarodowej karierze. Jest źródłem wielokulturowej polaryzacji, którą świat obserwuje w różnorodnych interpretacjach muzyki genialnego kompozytora. Pierwszy Konkurs Chopinowski odbył się w 1927 roku w Warszawie...
                     </p>
+
                     <a href="https://chopin2020.pl/pl/about/about-competition">- chopin2020.pl</a>
                 </div>
             </div>
             
-            
-
-
-
-
-
-
-
-
             <img class="podpis_chopina" src="assets/img/Chopins_Unterschrift.svg" alt="Podpis Chopina">
 
             <footer>
@@ -356,29 +310,15 @@
             </footer>
         </div>
 
-
-
-
-
-
-
-
-
-        
         <a href="#top" class="backtotop">
             <ion-icon name="arrow-up-outline"></ion-icon>
         </a>
+
         <div class="loader-wrapper">
             <span class="loader"><span class="loader-inner"></span></span>
         </div>
-        <a class="language_btn">ENG</a>
-        
 
-
-
-
-
-
+        <a class="language_btn">EN</a>
 
 
 
@@ -398,13 +338,7 @@
             })
         </script>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-        <script src="scripts/main.js"></script>
-
-        <script src="scripts/language.js"></script>
-
-        <script>
+        <script type="text/javascript">
             var loader = document.querySelector('.loader-wrapper');
             var body = document.querySelector('body');
 
@@ -415,18 +349,30 @@
             });
         </script>
 
+        <script type="text/javascript">
+            var btn = document.querySelector('.language_btn');
+            let language = false;
+
+            btn.addEventListener('click', () => {
+                if (language == true) {
+                    language = false;
+                    document.querySelector('footer').classList.remove('resp-vsx');
+                } else {
+                    language = true;
+                    document.querySelector('footer').classList.add('resp-vsx');
+                }
+            });
+        </script>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="scripts/main.js"></script>
+
+        <script src="scripts/language.js"></script>
+
         <!-- Imported from https://ionic.io/ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
-
-
-
-
-
-
 
         <!--
             created by xname && Pedro
