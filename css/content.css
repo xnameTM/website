@@ -69,6 +69,7 @@ span.lightshadow {
     background: #fff;
     padding: 30px 50px;
     border-radius: 25px;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 800px) {
@@ -411,7 +412,7 @@ span.lightshadow {
     position: relative;
     left: 5%;
     width: 90%;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: 2px;
     padding: 30px 50px;
@@ -431,7 +432,7 @@ span.lightshadow {
 
 @media only screen and (max-width: 700px) {
     .pochodzenie_text {
-        font-size: 30px;
+        font-size: 1.3em;
     }
 }
 
@@ -448,6 +449,7 @@ span.lightshadow {
     font-weight: 500;
     margin-left: 5%;
     width: 90%;
+    margin-bottom: 70px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -476,10 +478,9 @@ span.lightshadow {
 
 .dom_chopina_box p {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     letter-spacing: 2px;
-    text-transform: uppercase;
 }
 
 .podpis_chopina {
@@ -503,17 +504,18 @@ span.lightshadow {
 
 .konkurs p {
     color: #000;
-    font-size: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
+    font-size: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
     background: #fff;
     padding: 30px 40px;
     border-radius: 25px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .konkurs a {
-    margin-left: 70%;
+    margin-left: calc(50% + 100px);
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -527,8 +529,8 @@ span.lightshadow {
 }
 
 .pomnik img {
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 5%;
+    width: 90%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -536,13 +538,20 @@ span.lightshadow {
 .pomnik p {
     color: #000;
     font-size: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     background: #fff;
     padding: 30px 40px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     margin-bottom: 200px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .pomnik p {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
