@@ -350,15 +350,15 @@
         </script>
 
         <script type="text/javascript">
-            var btn = document.querySelector('.language_btn');
-            let language = false;
+            var przycisk = document.querySelector('.language_btn');
+            let b = false;
 
-            btn.addEventListener('click', () => {
-                if (language == true) {
-                    language = false;
+            przycisk.addEventListener('click', () => {
+                if (b == true) {
+                    b = false;
                     document.querySelector('footer').classList.remove('resp-vsx');
                 } else {
-                    language = true;
+                    b = true;
                     document.querySelector('footer').classList.add('resp-vsx');
                 }
             });
