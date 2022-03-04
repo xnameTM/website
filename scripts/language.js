@@ -5,6 +5,7 @@ btn.addEventListener('click', () => {
     if (language == true) {
         // PL -----------------------------------------------------------
         language = false;
+        document.querySelector('footer').classList.remove('resp-vsx');
 
         // authors.html
         $(".short_text").text(" Jesteśmy uczniami ZSŁ na profilu programistycznym, a o to nasz projekt na temat najsłynniejszego polskiego pianisty - Fryderyka Chopina");
@@ -79,6 +80,7 @@ btn.addEventListener('click', () => {
     } else {
         // ENG -----------------------------------------------------------
         language = true;
+        document.querySelector('footer').classList.add('resp-vsx');
 
         // authors.html
         $(".short_text").text(" We are students of the ZSŁ on the programming profile, and this is our project about the most famous Polish pianist - Fryderyk Chopin");

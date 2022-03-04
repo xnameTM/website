@@ -426,6 +426,10 @@ footer a:hover:before {
     background: #000;
 }
 
+.resp-vsx a {
+    left: calc(50% - 96px);
+}
+
 @media only screen and (max-width: 1490px) {
     .test001{
         font-size: 45px;
