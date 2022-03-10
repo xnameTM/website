@@ -1,0 +1,175 @@
+.settings {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background: var(--theme2);
+    width: 60px;
+    height: 60px;
+    z-index: 10000000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 1px var(--theme2), 0 0 3px var(--theme2), 0 0 5px var(--theme2);
+    transition: .3s;
+}
+
+.settings:hover {
+    box-shadow: 0 0 5px var(--theme2), 0 0 10px var(--theme2), 0 0 15px var(--theme2);
+}
+
+.settings ion-icon {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 50px;
+    animation: rotateAnimation 10s linear infinite;
+    color: var(--text);
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.settings-menu {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #00000083;
+    backdrop-filter: blur(2px);
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.settings-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.settings-menu .settings-main {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    background: #242424;
+    z-index: 10000000;
+    border-radius: 20px;
+    padding: 40px;
+    overflow: auto;
+}
+
+.settings-box {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    .settings-box {
+        margin-bottom: 80px;
+    }
+}
+
+.settings-box span {
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 45px;
+    transition: .3s;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.settings-box span:hover {
+    background: #414141;
+}
+
+.settings-box span.option {
+    cursor: auto;
+    font-size: 25px;
+}
+
+.settings-box span.option:hover {
+    background: none;
+}
+
+.settings-box .active {
+    background: #666666;
+}
+
+/* .settings-box .color1.not-active {
+    text-decoration: line-through;
+    text-decoration-color: #fff;
+}
+
+.settings-box .color2.not-active {
+    text-decoration: line-through;
+    text-decoration-color: #000;
+}
+
+.settings-box .not-active,
+.settings-box .not-active:hover {
+    background: #2c2c2c;
+    cursor: default;
+} */
+
+.sth-color {
+    font-weight: 800;
+}
+
+.settings-box .dark {
+    color: #000;
+}
+
+.settings-box .light {
+    color: #fff;
+}
+
+.settings-text .color1 {
+    color: #000;
+}
+
+.settings-text .color2 {
+    color: #fff;
+}
+
+.settings-text .color3 {
+    color: #ec1839;
+}
+
+.settings-text .color4 {
+    color: #fa5b0f;
+}
+
+.settings-text .color5 {
+    color: #37b182;
+}
+
+.settings-text .color6 {
+    color: #1854b4;
+}
+
+.settings-text .color7 {
+    color: #f021b2;
+}
+
+.settings-box .active:hover {
+    background: #7a7a7a;
+}

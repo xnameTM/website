@@ -1,11 +1,11 @@
-.language_btn {
+/* .language_btn {
     background: #fff;
     position: fixed;
-    left: 20px;
+    left: 100px;
     bottom: 20px;
     width: 60px;
     height: 60px;
-    z-index: 10000;
+    z-index: 10000000;
     cursor: pointer;
     text-align: center;
     font-size: 25px;
@@ -25,4 +25,32 @@
 
 .language_btn:hover {
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+} */
+
+.language-box p {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 15px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.language-box .language_btn {
+    margin-left: 30px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    transition: .3s;
+    font-size: 20px;
+}
+
+.language-box .language_btn:hover {
+    background: #414141;
 }

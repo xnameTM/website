@@ -1,7 +1,7 @@
 var btn = document.querySelector('.language_btn');
 let language = false;
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', function(){
     if (language == true) {
         // PL -----------------------------------------------------------
         language = false;
@@ -11,7 +11,7 @@ btn.addEventListener('click', () => {
         $(".chxi24r").text("Twórcy");
 
         // index.hmtl
-        $('.language_btn').text("EN");
+        $('.language_btn').text("English");
         $('.main_text').text("Życie i Twórczość Chopina");
         $('.afterClick1 a').text("Postać");
         $('.afterClick2 a').text("Biografia");
@@ -76,6 +76,22 @@ btn.addEventListener('click', () => {
         $('.text40').text('Miedzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina');
         $('.text41').text('Konkurs Chopinowski jest najważniejszym wydarzeniem muzycznym w Polsce i jednym z najważniejszych wydarzeń muzycznych na świecie. Obok olbrzymiej roli jaką pełni w popularyzacji muzyki Chopina, odkrywa największe talenty pianistyczne, zapewniając młodym muzykom najskuteczniejszy start w międzynarodowej karierze. Jest źródłem wielokulturowej polaryzacji, którą świat obserwuje w różnorodnych interpretacjach muzyki genialnego kompozytora. Pierwszy Konkurs Chopinowski odbył się w 1927 roku w Warszawie...');
         $('.text42').text('Pomnik Fryderyka Chopina w Warszawie – secesyjny pomnik Fryderyka Chopina w parku Łazienkowskim w Warszawie, przedstawiający odlaną w brązie postać kompozytora siedzącą pod stylizowaną wierzbą. Data budowy 1909–1926;  Rekonstrukcja po wojnie 1946–1958; Stworzony przez  Wacława Szymanowskiego i Oskara Sosnowskiego.');
+        $('.text43').text('Grafika:');
+        $('.text44').text('Jakość');
+        $('.text45').text('Wydajność');
+        $('.text46').text('Kolor motywu:');
+        $('.text47').text('Czarny');
+        $('.text48').text('Biały');
+        $('.text49').text('Kolor tekstu:');
+        $('.text50').text('Czarny');
+        $('.text51').text('Biały');
+        $('.text52').text('Czerwony');
+        $('.text53').text('Pomarańczowy');
+        $('.text54').text('Zielony');
+        $('.text55').text('Niebieski');
+        $('.text56').text('Różowy');
+        $('.text57').text('Język:');
+
     } else {
         // ENG -----------------------------------------------------------
         language = true;
@@ -85,7 +101,7 @@ btn.addEventListener('click', () => {
         $(".chxi24r").text("Authors");
 
         // index.hmtl
-        $('.language_btn').text("PL");
+        $('.language_btn').text("Polski");
         $('.main_text').text("Chopin's life and composition");
         $('.afterClick1 a').text("Charakter");
         $('.afterClick2 a').text("Biography");
@@ -150,5 +166,20 @@ btn.addEventListener('click', () => {
         $('.text40').text("The International Piano Frederic Chopin Competition");
         $('.text41').text("The Chopin Competition is the most important music event in Poland and one of the most important music events in the world. Apart from the enormous role he plays in popularizing Chopin's music, he discovers the greatest pianistic talents, providing young musicians with the most effective start in an international career. It is a source of multicultural polarization that the world observes in various interpretations of the music of the genius composer. The first Chopin Competition was held in 1927 in Warsaw...");
         $('.text42').text("Monument to Fryderyk Chopin in Warsaw - the Art Nouveau monument to Fryderyk Chopin in Łazienkowski Park in Warsaw, presenting the composer cast in bronze sitting under a stylized willow tree. Date of construction 1909–1926; Reconstruction after the war 1946–1958; Created by Wacław Szymanowski and Oskar Sosnowski.");
+        $('.text43').text('Graphics:');
+        $('.text44').text('Quality');
+        $('.text45').text('Performance');
+        $('.text46').text('Theme color:');
+        $('.text47').text('Black');
+        $('.text48').text('White');
+        $('.text49').text('Text color:');
+        $('.text50').text('Black');
+        $('.text51').text('White');
+        $('.text52').text('Red');
+        $('.text53').text('Orange');
+        $('.text54').text('Green');
+        $('.text55').text('Blue');
+        $('.text56').text('Pink');
+        $('.text57').text('Language:');
     }
 });
