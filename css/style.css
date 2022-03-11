@@ -129,7 +129,7 @@ header ul li a:hover:after {
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-clip: text;
-    /* background-clip: none; */
+    background-clip: none;
     /* background-clip: border-box; */
     color: transparent;
     -webkit-touch-callout: none;
@@ -149,10 +149,13 @@ header ul li a:hover:after {
     max-width: 1000px;
     z-index: 10000;
     text-align: center;
+    background: var(--themeSrodkowyTekst);
+    padding: 1px;
+    box-shadow: 0 0 10px var(--themeSrodkowyTekst), 0 0 15px var(--themeSrodkowyTekst), 0 0 20px var(--themeSrodkowyTekst);
 }
 
 .srodkowy_tekst p:first-child {
-    background-color: var(--themeSrodkowyTekst);
+    /* background-color: var(--themeSrodkowyTekst); */
     color: var(--text2);
     font-size: 70px;
     padding-top: 20px;
@@ -161,7 +164,7 @@ header ul li a:hover:after {
 }
 
 .srodkowy_tekst p:last-child {
-    background-color: var(--themeSrodkowyTekst);
+    /* background-color: var(--themeSrodkowyTekst); */
     color: var(--text2);
     font-size: 40px;
     padding-left: 30px;
@@ -311,7 +314,7 @@ h2.temat:hover:after {
     transition: all .5s ease-in-out;
     background: rgba(0, 0, 0, 0.651);
     border: 3px solid #fff;
-    z-index: 100002;
+    z-index: 100000000000;
 }
 
 .menu-btn__burger {
@@ -481,7 +484,7 @@ footer a:hover:before {
     header ul {
         position: absolute;
         display: block;
-        z-index: 100001;
+        z-index: 100000000;
         background: var(--theme2);
         top: 0;
         left: -100%;
@@ -502,7 +505,7 @@ footer a:hover:before {
     }
 
     header ul li:last-child {
-        margin-bottom: 150px;
+        margin-bottom: 200px;
     }
 
     header ul li a {

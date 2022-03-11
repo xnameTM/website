@@ -10,7 +10,9 @@ settingsBtn.addEventListener('click', function(){
     } else {
         settingsIsOpen = true;
         settingsMenu.classList.remove("active");
-        main.classList.remove('blockScroll');
+        if (!menuOpen) {
+            main.classList.remove('blockScroll');
+        }
     }
 });
 

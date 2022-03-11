@@ -88,6 +88,10 @@
     }
 }
 
+.settings-box p span {
+    margin-left: 30px;
+}
+
 .settings-box span {
     padding: 5px 8px;
     border-radius: 10px;
@@ -111,6 +115,7 @@
 .settings-box span.option {
     cursor: auto;
     font-size: 25px;
+    margin-left: 0;
 }
 
 .settings-box span.option:hover {
