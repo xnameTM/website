@@ -27,14 +27,18 @@
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 } */
 
+.language-box {
+    margin-bottom: 100px;
+}
+
 .language-box p {
     color: #fff;
     font-size: 25px;
     letter-spacing: 2px;
     font-weight: 600;
     margin-top: 30px;
-    margin-bottom: 80px;
     margin-left: 15px;
+    margin-bottom: 15px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -43,7 +47,10 @@
     user-select: none;
 }
 
-.language-box .language_btn {
+.language_btn {
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
     margin-left: 30px;
     padding: 5px 8px;
     border-radius: 10px;
@@ -51,6 +58,6 @@
     font-size: 20px;
 }
 
-.language-box .language_btn:hover {
+.language_btn:hover {
     background: #414141;
 }
