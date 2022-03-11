@@ -52,9 +52,12 @@ header.sticky {
     box-shadow: none;
 }
 
-header.sticky .main_text,
-header.sticky ul li a {
+header.sticky .main_text {
     color: var(--theme1);
+}
+
+header.sticky ul li a {
+    color: var(--text);
 }
 
 header .main_text {

@@ -1,7 +1,8 @@
 var btn = document.querySelector('.language_btn');
+var btn2 = document.querySelector('.language_btn2');
 let language = false;
 
-btn.addEventListener('click', function(){
+function translate() {
     if (language == true) {
         // PL -----------------------------------------------------------
         language = false;
@@ -91,6 +92,7 @@ btn.addEventListener('click', function(){
         $('.text55').text('Niebieski');
         $('.text56').text('Różowy');
         $('.text57').text('Język:');
+        $('.language_btn2').text('EN');
 
     } else {
         // ENG -----------------------------------------------------------
@@ -181,5 +183,6 @@ btn.addEventListener('click', function(){
         $('.text55').text('Blue');
         $('.text56').text('Pink');
         $('.text57').text('Language:');
+        $('.language_btn2').text('PL');
     }
-});
+}
