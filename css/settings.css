@@ -20,11 +20,11 @@
     margin-left: 5px;
     margin-top: 5px;
     font-size: 50px;
-    animation: rotateAnimation 10s linear infinite;
+    /* animation: rotateAnimation 10s linear infinite; */
     color: var(--text);
 }
 
-@keyframes rotateAnimation {
+/* @keyframes rotateAnimation {
     0% {
         transform: rotate(0deg);
     }
@@ -32,7 +32,7 @@
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 .settings-menu {
     position: fixed;

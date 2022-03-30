@@ -111,7 +111,7 @@ function translate() {
         $('.afterClick4 a').text("Composition");
         $('.afterClick5 a').text("Songs");
         $('.afterClick6 a').text("Heritage");
-        $('.spis_box ol li:nth-child(1) a').text("I. Charakter");
+        $('.spis_box ol li:nth-child(1) a').text("I. Character");
         $('.spis_box ol li:nth-child(2) a').text("II. Biography");
         $('.spis_box ol li:nth-child(3) a').text("III. Chopin's home");
         $('.spis_box ol li:nth-child(4) a').text("IV. Composition");
@@ -119,7 +119,7 @@ function translate() {
         $('.spis_box ol li:nth-child(6) a').text("VI. Heritage");
         $('.srodkowy_tekst p:nth-child(1)').text("Frédéric Chopin,");
         $('.srodkowy_tekst p:nth-child(2)').text("the artist who changed the world.");
-        $('.postac_main_text').text("Charakter");
+        $('.postac_main_text').text("Character");
         $('.biografia_main_text').text("Biography");
         $('.pochodzenie_main_text').text("Chopin's home");
         $('.tworczosc_main_text').text("Composition");

@@ -30,7 +30,8 @@ qualityGraphicsTag.addEventListener('click', function(){
     performenceGraphicsTag.classList.remove('active');
     $('.main_background p').css("background-clip", "");
     $('.backtotop ion-icon').css("animation", "shortAnim 5s linear infinite");
-    $('.settings ion-icon').css("animation", "rotateAnimation 10s linear infinite");
+    main.classList.remove('performence');
+    // $('.settings ion-icon').css("animation", "rotateAnimation 10s linear infinite");
 });
 
 performenceGraphicsTag.addEventListener('click', function(){
@@ -38,7 +39,8 @@ performenceGraphicsTag.addEventListener('click', function(){
     performenceGraphicsTag.classList.add('active');
     $('.main_background p').css("background-clip", "border-box");
     $('.backtotop ion-icon').css("animation", "none");
-    $('.settings ion-icon').css("animation", "none");
+    main.classList.add('performence');
+    // $('.settings ion-icon').css("animation", "none");
 });
 
 
