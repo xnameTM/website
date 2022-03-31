@@ -621,7 +621,7 @@ footer a:hover:before {
     }
 
     50% {
-        box-shadow: 0 0 2px var(--theme2)f, 0 0 4px var(--theme2), 0 0 8px var(--theme2);
+        box-shadow: 0 0 2px var(--theme2), 0 0 4px var(--theme2), 0 0 8px var(--theme2);
     }
 
     55% {
@@ -651,30 +651,4 @@ footer a:hover:before {
 
 .backtotop.active ion-icon {
     font-size: 60px;
-}
-
-/* h1,h2,p,img */
-
-*[data-scroll="out"] {
-    transform: translateX(-30px);
-    opacity: 0;
-    transition: 1.5s;
-}
-
-*[data-scroll="in"] {
-    transform: translateX(0);
-    opacity: 1;
-    transition: 1.5s;
-}
-
-img.podpis_chopina[data-scroll="out"],
-footer p[data-scroll="out"],
-.settings-box p[data-scroll="out"] {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-body.performence *[data-scroll="out"] {
-    transform: translateX(0);
-    opacity: 1;
 }

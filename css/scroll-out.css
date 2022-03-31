@@ -1,0 +1,33 @@
+*[data-scroll="out"] {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: 1.5s;
+}
+
+*[data-scroll="in"] {
+    transform: translateX(0);
+    opacity: 1;
+    transition: 1.5s;
+}
+
+img.podpis_chopina[data-scroll="out"],
+footer p[data-scroll="out"],
+.settings-box p[data-scroll="out"] {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+body.performence *[data-scroll="out"] {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 500px) {
+    *[data-scroll="out"] {
+        transform: translateX(0);
+    }
+}
+
+h2.temat[data-scroll="out"] {
+    transform: translateX(0);
+}
